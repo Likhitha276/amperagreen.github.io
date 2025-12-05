@@ -11,63 +11,45 @@
       content="Ampera Green LLC is a consulting firm that helps innovative companies in tech, bioscience, and green energy raise capital and build investor ready strategies."
     />
     <meta name="author" content="Ampera Green LLC" />
-    <title>Ampera Green LLC | Capital and Strategy Consulting</title>
+    <title>Ampera Green LLC | Capital & Strategy Consulting</title>
 
-    <!-- Bootstrap CSS from CDN -->
+    <!-- Favicon -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+      rel="icon"
+      type="image/x-icon"
+      href="dist/assets/favicon.ico"
     />
 
-    <!-- Simple custom styles -->
-    <style>
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-      }
-      header.masthead {
-        padding: 10rem 0 6rem 0;
-        text-align: center;
-        color: #fff;
-        background: #0b1727;
-      }
-      header .masthead-subheading {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        opacity: 0.85;
-      }
-      header .masthead-heading {
-        font-size: 3rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-      }
-      .section-heading {
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-      .section-subheading {
-        color: #6c757d;
-        font-size: 0.95rem;
-      }
-      .navbar-brand span {
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-      footer {
-        background: #f8f9fa;
-        font-size: 0.9rem;
-      }
-    </style>
+    <!-- Font Awesome icons -->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Core theme CSS (from dist) -->
+    <link href="dist/css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="#page-top">
-          <span>Ampera Green LLC</span>
+          <img
+            src="dist/assets/img/navbar-logo.svg"
+            alt="Ampera Green LLC Logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -79,9 +61,10 @@
           aria-label="Toggle navigation"
         >
           Menu
+          <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#services">Services</a>
             </li>
@@ -89,7 +72,7 @@
               <a class="nav-link" href="#sectors">Sectors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#approach">Approach</a>
+              <a class="nav-link" href="#about">Approach</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team">Leadership</a>
@@ -102,50 +85,67 @@
       </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Masthead -->
     <header class="masthead">
       <div class="container">
         <div class="masthead-subheading">Capital. Strategy. Execution.</div>
-        <div class="masthead-heading">Ampera Green LLC</div>
-        <p class="mt-4 mb-4">
-          Advisory and consulting support for founders and companies in
-          technology, bioscience, and green energy who are preparing to raise
-          capital.
+        <div class="masthead-heading text-uppercase">Ampera Green LLC</div>
+        <p class="text-white-75 mb-4">
+          We help founders and innovators structure, position, and raise
+          capital for high impact companies in technology, bioscience, and green
+          energy.
         </p>
-        <a class="btn btn-primary btn-lg" href="#services">View Services</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services">
+          View Services
+        </a>
       </div>
     </header>
 
     <!-- Services -->
-    <section class="py-5" id="services">
+    <section class="page-section" id="services">
       <div class="container">
-        <h2 class="section-heading text-center">Services</h2>
-        <p class="section-subheading text-center mb-5">
-          Focused support across capital raising, positioning, and investor
-          communication.
-        </p>
-        <div class="row g-4">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Services</h2>
+          <h3 class="section-subheading text-muted">
+            Tailored support across capital raising, strategy, and investor
+            communications.
+          </h3>
+        </div>
+        <div class="row text-center">
           <div class="col-md-4">
-            <h4>Capital Raise Advisory</h4>
-            <p>
-              Structuring equity or hybrid rounds, refining the financial story,
-              and preparing investor ready materials for seed, growth, or
-              strategic capital.
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i
+                class="fas fa-hand-holding-dollar fa-stack-1x fa-inverse"
+              ></i>
+            </span>
+            <h4 class="my-3">Capital Raise Advisory</h4>
+            <p class="text-muted">
+              Structure and position your raise, refine the financial story, and
+              prepare investor ready materials for seed, growth, or strategic
+              capital.
             </p>
           </div>
           <div class="col-md-4">
-            <h4>Investor and Partner Outreach</h4>
-            <p>
-              Mapping and prioritizing investors, family offices, and strategic
-              partners, then supporting outreach, follow up, and data room
-              readiness.
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-network-wired fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Investor and Partner Outreach</h4>
+            <p class="text-muted">
+              Identify aligned investors, family offices, and strategic partners
+              and support outreach, follow up, and data room readiness.
             </p>
           </div>
           <div class="col-md-4">
-            <h4>Strategy and Positioning</h4>
-            <p>
-              Clarifying value proposition, market thesis, and go to market
-              plans so that investors understand the opportunity and the path to
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Strategy and Positioning</h4>
+            <p class="text-muted">
+              Clarify your value proposition, market thesis, and go to market
+              plan so that investors understand the opportunity and the path to
               scale.
             </p>
           </div>
@@ -154,157 +154,418 @@
     </section>
 
     <!-- Sectors -->
-    <section class="py-5 bg-light" id="sectors">
+    <section class="page-section bg-light" id="sectors">
       <div class="container">
-        <h2 class="section-heading text-center">Sectors we focus on</h2>
-        <p class="section-subheading text-center mb-5">
-          At the intersection of technology, health, and sustainability.
-        </p>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h5>Bioscience and Healthtech</h5>
-            <p>
-              Diagnostic platforms, digital health, and translational science
-              ventures preparing for clinical and commercial scale.
-            </p>
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Sectors We Focus On</h2>
+          <h3 class="section-subheading text-muted">
+            We work with founders at the intersection of technology, health,
+            and sustainability.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <div class="portfolio-link">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-industry fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="dist/assets/img/portfolio/1.jpg"
+                  alt="Bioscience and healthtech"
+                />
+              </div>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Bioscience and Healthtech
+                </div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Diagnostic platforms, digital health, and translational
+                  science ventures preparing for clinical and commercial scale.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h5>Green Energy and Climate</h5>
-            <p>
-              Clean energy, storage, and sustainability projects that require
-              thoughtful capital structures and long term partners.
-            </p>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <div class="portfolio-link">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-bolt fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="dist/assets/img/portfolio/2.jpg"
+                  alt="Green energy and climate"
+                />
+              </div>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Green Energy and Climate
+                </div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Clean energy, storage, and sustainability projects that
+                  require thoughtful capital structures and long term partners.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h5>Technology and Data</h5>
-            <p>
-              Software, AI, and data driven platforms that need clear
-              storytelling around product, traction, and defensibility.
-            </p>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <div class="portfolio-link">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-microchip fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="dist/assets/img/portfolio/3.jpg"
+                  alt="Technology and data"
+                />
+              </div>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Technology and Data
+                </div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Software, AI, and data driven platforms that need clear
+                  storytelling around product, traction, and defensibility.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Approach -->
-    <section class="py-5" id="approach">
+    <section class="page-section" id="about">
       <div class="container">
-        <h2 class="section-heading text-center">Our approach</h2>
-        <p class="section-subheading text-center mb-5">
-          A practical, hands on process built from founder and investor
-          experience.
-        </p>
-        <div class="row g-4">
-          <div class="col-md-3">
-            <h6>Step 1 – Discovery</h6>
-            <p>
-              Initial review of company, market, current materials, and capital
-              needs.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h6>Step 2 – Structure</h6>
-            <p>
-              Align on round structure, use of funds, milestones, and investor
-              expectations.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h6>Step 3 – Materials</h6>
-            <p>
-              Create or refine the deck, one page, and financial overview plus
-              a clear data room outline.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h6>Step 4 – Outreach</h6>
-            <p>
-              Support targeted outreach, responses to questions, and ongoing
-              communication through closing.
-            </p>
-          </div>
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Our Approach</h2>
+          <h3 class="section-subheading text-muted">
+            Structured, practical, and focused on outcomes for both founders and
+            investors.
+          </h3>
         </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="dist/assets/img/about/1.jpg"
+                alt="Discovery"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 1</h4>
+                <h4 class="subheading">Discovery and Readiness Check</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  We start with a focused review of your company, market,
+                  financials, and existing materials to understand where you are
+                  in the capital raising journey and what is needed next.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="dist/assets/img/about/2.jpg"
+                alt="Structure"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 2</h4>
+                <h4 class="subheading">Structure and Strategy</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Together we design the raise structure, clarify capital needs
+                  and use of funds, and align the story with the expectations of
+                  institutional and strategic investors.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="dist/assets/img/about/3.jpg"
+                alt="Materials"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 3</h4>
+                <h4 class="subheading">Materials and Data Room</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  We refine or create core materials such as the investor deck,
+                  one page summary, financial overview, and data room
+                  structure so that your information is clear, consistent, and
+                  easy to evaluate.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="dist/assets/img/about/4.jpg"
+                alt="Support"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 4</h4>
+                <h4 class="subheading">Outreach and Ongoing Support</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  We support targeted outreach, follow up, and investor
+                  discussions, helping you respond to questions, refine
+                  messaging, and keep the process moving toward a successful
+                  close.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                Partner
+                <br />
+                With
+                <br />
+                Ampera Green
+              </h4>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Leadership -->
-    <section class="py-5 bg-light" id="team">
+    <section class="page-section bg-light" id="team">
       <div class="container">
-        <h2 class="section-heading text-center">Leadership</h2>
-        <p class="section-subheading text-center mb-5">
-          Led by an entrepreneur with decades of experience across technology,
-          bioscience, and green energy.
-        </p>
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <h4>Sunil S.</h4>
-            <p class="text-muted">Founder and Managing Partner</p>
-            <p>
-              Experience across industrial genetics, alternate fuels, nano
-              medical devices, and green field environmental monitoring. Focused
-              on helping teams organize their story and secure the right capital
-              partners.
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Leadership</h2>
+          <h3 class="section-subheading text-muted">
+            Practical experience across entrepreneurship, technology,
+            bioscience, and green energy.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="dist/assets/img/team/1.jpg"
+                alt="Sunil S"
+              />
+              <h4>Sunil S.</h4>
+              <p class="text-muted">Founder and Managing Partner</p>
+              <p class="text-muted small">
+                Entrepreneur with experience across technology, bioscience, and
+                green energy, focused on helping companies organize their story
+                and secure the right capital partners.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              Ampera Green LLC works with a network of subject matter experts,
+              investors, and operators to support clients from early stage
+              validation through scale up and expansion.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="py-5" id="contact">
+    <!-- Simple client types row -->
+    <div class="py-5">
       <div class="container">
-        <h2 class="section-heading text-center">Contact</h2>
-        <p class="section-subheading text-center mb-4">
-          Share a brief overview of your company and capital goals and we will
-          follow up with next steps.
-        </p>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form>
-              <div class="mb-3">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control" id="name" type="text" />
+        <div class="row align-items-center">
+          <div class="col-md-3 col-sm-6 my-3">
+            <div class="img-fluid img-brand d-block mx-auto text-center text-muted">
+              <strong>Tech Ventures</strong>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <div class="img-fluid img-brand d-block mx-auto text-center text-muted">
+              <strong>Bioscience Labs</strong>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <div class="img-fluid img-brand d-block mx-auto text-center text-muted">
+              <strong>Green Energy Projects</strong>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <div class="img-fluid img-brand d-block mx-auto text-center text-muted">
+              <strong>Impact Investors</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contact</h2>
+          <h3 class="section-subheading text-muted">
+            Share a brief overview of your company and capital needs and we
+            will follow up with next steps.
+          </h3>
+        </div>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name *"
+                  data-sb-validations="required"
+                />
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="name:required"
+                >
+                  A name is required.
+                </div>
               </div>
-              <div class="mb-3">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-control" id="email" type="email" />
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email *"
+                  data-sb-validations="required,email"
+                />
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="email:required"
+                >
+                  An email is required.
+                </div>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="email:email"
+                >
+                  Email is not valid.
+                </div>
               </div>
-              <div class="mb-3">
-                <label class="form-label" for="message">Company and goals</label>
+              <div class="form-group mb-md-0">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone *"
+                  data-sb-validations="required"
+                />
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="phone:required"
+                >
+                  A phone number is required.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
                 <textarea
                   class="form-control"
                   id="message"
-                  rows="4"
+                  placeholder="Tell us about your company and capital goals *"
+                  data-sb-validations="required"
                 ></textarea>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
               </div>
-              <button class="btn btn-primary" type="button">
-                Send (placeholder only)
-              </button>
-              <p class="mt-3 text-muted">
-                Or email us at
-                <a href="mailto:info@amperagreen.com">info@amperagreen.com</a>.
-              </p>
-            </form>
+            </div>
           </div>
-        </div>
+
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center text-white mb-3">
+              <div class="fw-bolder">Form submission successful.</div>
+              We will contact you shortly with next steps.
+            </div>
+          </div>
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">
+              There was an error sending your message.
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              class="btn btn-primary btn-xl text-uppercase disabled"
+              id="submitButton"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-3">
-      <div class="container d-flex justify-content-between">
-        <div>
-          Copyright © <span id="yearSpan">2025</span> Ampera Green LLC
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright © Ampera Green LLC
+            <span id="yearSpan">2025</span>
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0"></div>
+          <div class="col-lg-4 text-lg-end">
+            <span class="link-dark text-decoration-none me-3">
+              Advisory and consulting services only
+            </span>
+          </div>
         </div>
-        <div>Advisory and consulting services only</div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core theme JS from dist -->
+    <script src="dist/js/scripts.js"></script>
+
     <script>
+      // keep footer year current
       document.getElementById("yearSpan").textContent =
         new Date().getFullYear();
     </script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>
